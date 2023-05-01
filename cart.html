@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Checkout page to buy items">
+	<meta name="keywords" content="payment, checkout, buy, pay now, order">
+	<meta name="copyright" content="The Dog Stop and Shop">
+	<meta name="author" content="Talia Grayson">
+	<meta name="robots" content="noindex,nofollow">
+	<title>Cart-The Dog Stop and Shop</title>
+	<link rel="icon" href="images/favicon.ico">
+	<script src="https://kit.fontawesome.com/dfb60fcbea.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+
+<body>
+<div class="header">
+<h1>The Dog Stop and Shop</h1>
+	
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="images/logo.jpg" alt="pink dog brand logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="index.html">Dog Stop</a></li>
+				<li><a href="products.html">Products</a>
+				
+				<div class="submenu">
+				<ul>
+				<li><a href="walks.html">Walk</a></li>
+				<li><a href="play.html">Play</a></li>
+				<li><a href="wear.html">Wear</a></li>
+				<li><a href="rest.html">Rest</a></li>
+				</ul>
+				</div>
+				
+				</li>
+				
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html">
+		<i class="fa-solid fa-bag-shopping"></i>
+		</a>
+		</div>
+		
+	</div>
+</div>
+
+<main>
+<h2>All set?</H2>
+<p>Be sure to fill everything out that has an asterisk</p>
+
+
+
+<div class="formrow">
+  <div class="col-75">
+    <div class="formcontainer">
+  
+
+        <div class="formrow">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+			
+            <label><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="contact-name" name="firstname" placeholder="John Doe">
+			<span>*</span>
+
+			
+            <label><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="contact-email" name="email" placeholder="john@example.com">
+			<span>*</span>
+			
+            <label><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="contact-adr" name="address" placeholder=" 123 Street">
+			<span>*</span>
+			
+            <label><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="contact-city" name="city" placeholder="New York">
+			<span>*</span>
+
+            <div class="formrow">
+              <div class="col-50">
+			  
+                <label>State</label>
+                <input type="text" id="contact-state" name="state" placeholder="NY">
+				<span>*</span>
+				
+              </div>
+              <div class="col-50">
+			  
+                <label>Zip</label>
+                <input type="text" id="contact-zip" name="zip" placeholder="10101">
+				<span>*</span>
+				
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+			
+            <label>Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+			
+            <label>Name on Card</label>
+            <input type="text" id="contact-cardname" name="cardname" placeholder="John Doe">
+			<span>*</span>
+			
+            <label>Credit card number</label>
+            <input type="text" id="contact-card" name="cardnumber" placeholder="1111-2222-3333-4444">
+			<span>*</span>
+			
+            <label for="expmonth">Exp Month</label>
+            <select id="expmonth" name="expmonth">
+			<option value="january">Jan</option>
+			<option value="february">Feb</option>
+			<option value="march">Mar</option>
+			<option value="april">Apr</option>
+			<option value="may">May</option>
+			<option value="june">June</option>
+			<option value="july">July</option>
+			<option value="august">Aug</option>
+			<option value="september">Sep</option>
+			<option value="october">Oct</option>
+			<option value="november">Nov</option>
+			<option value="december">Dec</option>
+			</select>
+			<span>*</span>
+
+            <div class="formrow">
+              <div class="col-50">
+                <label>Exp Year</label>
+                <input type="text" id="contact-expyear" name="expyear" placeholder="2024">
+				<span>*</span>
+              </div>
+              <div class="col-50">
+                <label>CVV</label>
+                <input type="text" id="contact-cvv" name="cvv" placeholder="123">
+				<span>*</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+		
+		<div class="col-50">
+        <label>Shipping address same as billing</label>
+		<input type="checkbox" checked="checked" name="sameadr">
+		</div>
+		
+        <input type="submit" value="Submit" class="btn">
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="formcontainer">
+      <h4>Cart
+        <span class="price">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      <p><a href="walks.html">Pink Rope Leash</a> <span class="price">$30</span></p>
+      <p><a href="walks.html">Pink Harness</a> <span class="price">$40</span></p>
+      <p><a href="wear.html">Cable Knit Sweater</a> <span class="price">$20</span></p>
+      <p><a href="rest.html">Couch Blanket</a> <span class="price">$52</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$142</b></span></p>
+    </div>
+  </div>
+</div>
+<p>We hope you enjoy your items! Please allow 7-14 business days to recieve your order. We appreciate your purchase!</p>
+
+</main>
+
+<footer>
+<ul class="footer-list">
+	<li> <a href="contact.html">Contact Us</a> </li>
+	<li> <a href="about.html">About</a> </li>
+	<li> <a href="privacy.html">Privacy Policy</a> </li>
+</ul>
+
+<p> Date and Time: <span id="time"> </span></p>
+<script src="script.js"></script>
+<p>Copyright 2022</p>
+</footer>
+
+
+
+</body>
+</html>

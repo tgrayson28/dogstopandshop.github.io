@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Contact page with email information and iquiry form.">
+	<meta name="keywords" content="contact, email, form">
+	<meta name="copyright" content="The Dog Stop and Shop">
+	<meta name="author" content="Talia Grayson">
+	<meta name="robots" content="noindex,nofollow">
+	<title>Contact-The Dog Stop and Shop</title>
+	<link rel="icon" href="images/favicon.ico">
+	<script src="https://kit.fontawesome.com/dfb60fcbea.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+
+<body>
+<div class="header">
+<!-- start of freefind search box html -->
+<table>
+<tr>
+	<td>
+		<form action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+		<input type="hidden" name="si" value="40656583">
+		<input type="hidden" name="pid" value="r">
+		<input type="hidden" name="n" value="0">
+		<input type="hidden" name="_charset_" value="">
+		<input type="hidden" name="bcd" value="&#247;">
+		<input type="text" name="query" size="15"> 
+		<input type="submit" value="search">
+		</form>
+	</td>
+</tr>
+<tr>
+	<td>
+		<a href="https://www.freefind.com"  rel="nofollow">search engine</a><a  href="https://www.freefind.com"  rel="nofollow" > by
+		<span>freefind</span></a>
+	</td>
+</tr>
+</table>
+<!-- end of freefind search box html -->
+<h1>The Dog Stop and Shop</h1>
+	
+	<div class="container">
+		<div class="navbar">
+		<div class="logo">
+			<img src="images/logo.jpg" alt="pink dog brand logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="index.html">Dog Stop</a></li>
+				<li><a href="products.html">Products</a>
+				
+				<div class="submenu">
+				<ul>
+				<li><a href="walks.html">Walk</a></li>
+				<li><a href="play.html">Play</a></li>
+				<li><a href="wear.html">Wear</a></li>
+				<li><a href="rest.html">Rest</a></li>
+				</ul>
+				</div>
+				
+				</li>
+				
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html">
+		<i class="fa-solid fa-bag-shopping"></i>
+		</a>
+		</div>
+		
+	</div>
+</div>
+
+<main>
+<div class="container">
+<div class="row">
+			<div class="col-2">
+				<img src="images/contact.jpg" alt="Pug with questions marks around head">
+			</div>
+			<div class="col-2">
+				<h2>Questions, Comments, or Concerns?</h2>
+				<p>Email us at dogstopandshop@gmail.com or fill out the form below. We will get back to you as soon as possible. If you have a problem with your order, please include your order number in your message.<p>
+			</div>
+		</div>
+	
+	<form action="mailto:tgrayson6@studnent.umgc.email" method="GET">
+	<fieldset>
+	<legend>Contact Us form</legend>
+					
+		
+			<div class="input-group">
+			<label>Name</label>
+			<input type="text" placeholder="First and Last Name" id="contact-name" onkeyup="validateName()" tabindex="1">
+			<span>*</span>
+			<span id="name-error"></span>
+		</div>
+						
+		<div class="input-group">
+			<label>Phone</label>
+			<input type="tel" placeholder="0000000000" id="contact-phone" onkeyup="validatePhone()" tabindex="2">	
+			<span id="phone-error"></span>
+		</div>
+					
+					
+		
+			<div class="input-group">
+			<label>Email</label>
+			<input type="email" placeholder="abc@email.com" id="contact-email" onkeyup="validateEmail()" tabindex="3">
+			<span>*</span>
+			<span id="email-error"></span>
+			</div>
+			
+		<div class="input-group">
+				<label>Subject</label>
+				<select id="contact-subject" tabindex="4">
+				<option value="Returns">Returns</option>
+				<option value="Exchange">Exchange</option>
+				<option value="Sizing">Sizing</option>
+				<option value="Shipping">Shipping</option>
+				<option value="Other">Other</option>
+				</select>
+				<span>*</span>
+				<span id="subject-error"></span>
+			</div>
+						
+			<div class="input-group">
+				<label>Your Message</label>
+				<textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()" tabindex="4"></textarea>
+				<span>*</span>
+				<span id= "message-error"></span>
+			</div>
+			
+			<div class="input-group">
+				<label>Have you shopped with us before?</label>
+				<input type="checkbox" checked="checked">
+			</div>
+		
+		
+		<button onclick="return validateForm()" type="submit">Submit</button>
+		<span id="submit-error"></span>
+		</fieldset>
+		</form>
+</div>
+	
+</main>
+
+<footer>
+<ul class="footer-list">
+	<li> <a href="contact.html">Contact Us</a> </li>
+	<li> <a href="about.html">About</a> </li>
+	<li> <a href="privacy.html">Privacy Policy</a> </li>
+</ul>
+
+<p> Date and Time: <span id="time"> </span></p>
+<script src="script.js"></script>
+<p>Copyright 2022</p>
+</footer>
+
+
+</body>
+</html>
